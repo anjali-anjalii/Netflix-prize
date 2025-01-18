@@ -12,9 +12,16 @@ The Goal of this project is to build a Recommendation System to beat Netflix usi
 
 # Algorithms 
 We will implement 3 different algorithms for this problem which are well suited for recommendation systems
-# The SVD Algorithm
+## The SVD Algorithm
+SVD states that any matrix A can be factorized as: A = U<sub>(mxm)</sub>S<sub>(mxn)</sub>Vᵀ<sub>(nxn)</sub>
+where U and V are orthogonal matrices with orthonormal eigenvectors chosen from AAᵀ and AᵀA respectively. S is a diagonal matrix with r (rank) elements equal to the root of the positive eigenvalues of AAᵀ or Aᵀ A. 
+The SVD algorithm consists of decomposing the user-item interaction matrix into the product of two lower-dimensionality rectangular matrices and then performing their product to predict the values of non-empty cells in the user-movie interaction matrix.
 ![image](https://github.com/user-attachments/assets/026a329b-c402-49ed-ac21-966936cdff51)
-SVD states that any matrix A can be factorized as: A = USVᵀ
-where U and V are orthogonal matrices with orthonormal eigenvectors chosen from AAᵀ and AᵀA respectively. S is a diagonal matrix with r (rank) elements equal to the root of the positive eigenvalues of AAᵀ or Aᵀ A. The diagonal elements are composed of singular values i.e. an m× n matrix can be factorized as: A<sub>(mxn)</sub> = U<sub>(mxm)</sub>S<sub>(mxn)</sub>Vᵀ<sub>(nxn)</sub>
 
-# The SVD++ Algorithm
+## The SVD++ Algorithm
+It is n extension of SVD taking into account implicit ratings. Here, an implicit rating describes the fact that a user rated an item, regardless of the rating value.
+
+## KNN
+The KNN algorithm is a KNN based approach that looks at ratings of neighbors to make a prediction. We use cosine similarity for similarity which is efficient with sparse vectors.
+
+# Results
