@@ -24,15 +24,6 @@ It is n extension of SVD taking into account implicit ratings. Here, an implicit
 The KNN algorithm is a KNN based approach that looks at ratings of neighbors to make a prediction. We use cosine similarity for similarity which is efficient with sparse vectors.
 
 # Results
-The goal of this project was to study the approach used by the winner of the Netflix prize challenge. Because of the hardware constrain I sampled 9000 users and 1200 movies from the train data and 4000 users and 800 movies from the test data, leading to the variation in the actual result that had least RMSE of 0.881 for SVD++.
-* Original Train dataset
-> Total no of ratings : 80384405
-  Total No of Users   : 405041
-   Total No of movies  : 17424
+The goal of this project was to study the approach used by the winner of the Netflix prize challenge. 
+![image](https://github.com/user-attachments/assets/3d893048-dcdb-4981-ae06-6d574f7c3b6e)
 
-* Original Test dataset
-> Total no of ratings : 20096102
-  Total No of Users   : 349312
-  Total No of movies  : 17757
-
-![image](https://github.com/user-attachments/assets/5e9d1f86-4306-4348-b337-ef2195edf425)
