@@ -16,7 +16,6 @@ We will implement 3 different algorithms for this problem which are well suited 
 SVD states that any matrix A can be factorized as: A = U<sub>(mxm)</sub>S<sub>(mxn)</sub>Vᵀ<sub>(nxn)</sub>
 where U and V are orthogonal matrices with orthonormal eigenvectors chosen from AAᵀ and AᵀA respectively. S is a diagonal matrix with r (rank) elements equal to the root of the positive eigenvalues of AAᵀ or Aᵀ A. 
 The SVD algorithm consists of decomposing the user-item interaction matrix into the product of two lower-dimensionality rectangular matrices and then performing their product to predict the values of non-empty cells in the user-movie interaction matrix.
-![image](https://github.com/user-attachments/assets/026a329b-c402-49ed-ac21-966936cdff51)
 
 ## The SVD++ Algorithm
 It is n extension of SVD taking into account implicit ratings. Here, an implicit rating describes the fact that a user rated an item, regardless of the rating value.
@@ -25,3 +24,14 @@ It is n extension of SVD taking into account implicit ratings. Here, an implicit
 The KNN algorithm is a KNN based approach that looks at ratings of neighbors to make a prediction. We use cosine similarity for similarity which is efficient with sparse vectors.
 
 # Results
+The goal of this project was to study the approach used by the winner of the Netflix prize challenge. Because of the hardware constrain I sampled 9000 users and 1200 movies from the train data and 4000 users and 800 movies from the test data, leading to the variation in the actual result that had least RMSE of 0.881 for SVD++.
+* Original Train dataset
+> Total no of ratings : 80384405
+  Total No of Users   : 405041
+   Total No of movies  : 17424
+
+* Original Test dataset
+> Total no of ratings : 20096102
+  Total No of Users   : 349312
+  Total No of movies  : 17757
+![image](https://github.com/user-attachments/assets/5e9d1f86-4306-4348-b337-ef2195edf425)
