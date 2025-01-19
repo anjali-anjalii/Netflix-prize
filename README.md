@@ -34,4 +34,5 @@ The goal of this project was to study the approach used by the winner of the Net
 > Total no of ratings : 20096102
   Total No of Users   : 349312
   Total No of movies  : 17757
+
 ![image](https://github.com/user-attachments/assets/5e9d1f86-4306-4348-b337-ef2195edf425)
